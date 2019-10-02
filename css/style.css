@@ -1,12 +1,44 @@
+* {
+	margin: 0; padding: 0;
+}
 body {
+	font-family: arial, helvetica, sans-serif;
 	background-color: #4d4bac;
 }
 
-/*Formatando o menu*/
+/*Formatando o header*/
+.header {
+	margin-top: 106px;
+	padding-left: 50%;
+	position: relative;
+}
+.header::before {
+	content: '';
+	display: block;
+	width: 480px;
+	height: 435px;
+	position: absolute;
+	background-image: url(../images/ilustration-man.png);
+	background-position: center center;
+	background-size: cover;
+	left: -75px;
+}
 .menu {
-
 }
 
-.menu-list{
+.menu__list {
 	list-style: none;
+}
+.menu__list-item {
+	display: inline;
+}
+.menu__item {
+	color: white;
+	text-decoration: none;
+}
+
+.header__link {
+	text-decoration: none;
+	background: yellow;
+	color: #4d4bac;
 }
