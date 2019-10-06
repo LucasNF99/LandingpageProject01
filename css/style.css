@@ -1,9 +1,15 @@
 * {
 	margin: 0; padding: 0;
 }
+
+@font-face {
+	font-family: 'Franklin Gothic Book';
+	src: url(../font/Franklin\ Gothic\ Book.ttf);
+}
+
 body {
-	font-family: arial, helvetica, sans-serif;
 	background-color: #4d4bac;
+	font-family: 'Franklin Gothic Book';
 }
 
 /*Formatando o header*/
@@ -11,6 +17,7 @@ body {
 	margin-top: 106px;
 	padding-left: 50%;
 	position: relative;
+	margin-bottom: 350px;
 }
 .header::before {
 	content: '';
@@ -37,8 +44,39 @@ body {
 	text-decoration: none;
 }
 
-.header__link {
+.header__link{
 	text-decoration: none;
-	background: yellow;
+}
+
+.btn-default {
+	background: #ffc21a;
 	color: #4d4bac;
+	border: 1px solid #ffc21a;
+	padding: 20px 30px;
+	display: inline-block;
+}
+
+/* Formatando a section how started */
+.how-started {
+	margin-bottom: 150px;
+}
+
+
+/* Formatando a section about us */
+.about-us {
+	margin-bottom: 150px;
+}
+
+/* Formatando a section our goals */
+.our-goals {
+	margin-bottom: 150px;
+}
+
+/* Formatando a section get in touch*/
+.get-in-touch {
+	margin-bottom: 150px;
+}
+
+.oneForm input {
+	display: block;
 }
