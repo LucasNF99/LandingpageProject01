@@ -10,8 +10,12 @@
 body {
 	background-color: #4d4bac;
 	font-family: 'Franklin Gothic Book';
+	color: #ecf1f4;
 }
-
+section {
+	margin-left: 360px;
+	margin-right: 360px;
+}
 /*Formatando o header*/
 .header {
 	margin-top: 106px;
@@ -22,30 +26,58 @@ body {
 .header::before {
 	content: '';
 	display: block;
-	width: 480px;
-	height: 435px;
+	width: 670px;
+	height: 600px;
 	position: absolute;
 	background-image: url(../images/ilustration-man.png);
 	background-position: center center;
 	background-size: cover;
-	left: -75px;
+	left: -100px;
 }
+
 .menu {
+	margin-bottom: 150px;
 }
 
 .menu__list {
 	list-style: none;
 }
+
 .menu__list-item {
 	display: inline;
+	margin-right: 25px;
 }
+
 .menu__item {
-	color: white;
+	display: inline-block;
 	text-decoration: none;
+	color: #ecf1f4;
+}
+
+.menu__item:hover {
+	color: #ffc21a;
 }
 
 .header__link{
 	text-decoration: none;
+}
+
+
+.header__title {
+	font-size: 60px;
+	margin-bottom: 95px;
+	padding-left: 100px;
+	padding-right: 160px;
+}
+
+.header__title-yellow{
+	color: #ffc21a;
+	font-size: 66px;
+	display: block;
+}
+
+.header__text {
+	margin-bottom: 80px;
 }
 
 .btn-default {
@@ -54,11 +86,29 @@ body {
 	border: 1px solid #ffc21a;
 	padding: 20px 30px;
 	display: inline-block;
+	cursor: pointer;
 }
 
 /* Formatando a section how started */
 .how-started {
 	margin-bottom: 150px;
+}
+
+.section__title {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.list-process {
+	list-style: none;
+}
+
+.list-process__item{
+	display: inline;
+}
+
+.list-process__title {
+	color: #a9eadd;
 }
 
 
