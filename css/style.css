@@ -6,7 +6,6 @@
 	font-family: 'Franklin Gothic Book';
 	src: url(../font/Franklin\ Gothic\ Book.ttf);
 }
-
 body {
 	background-color: #4d4bac;
 	font-family: 'Franklin Gothic Book';
@@ -18,25 +17,27 @@ section {
 }
 /*Formatando o header*/
 .header {
-	margin-top: 106px;
+	margin-top: 80px;
 	padding-left: 50%;
 	position: relative;
 	margin-bottom: 350px;
+	margin-right: 70px;
 }
 .header::before {
 	content: '';
 	display: block;
-	width: 670px;
-	height: 600px;
+	width: 750px;
+	height: 800px;
 	position: absolute;
-	background-image: url(../images/ilustration-man.png);
+	background-image: url(../images/ilustration-1.png);
 	background-position: center center;
 	background-size: cover;
-	left: -100px;
+	left: -50px;
 }
 
 .menu {
-	margin-bottom: 150px;
+	margin-bottom: 100px;
+
 }
 
 .menu__list {
@@ -64,16 +65,22 @@ section {
 
 
 .header__title {
-	font-size: 60px;
+	font-size: 55px;
 	margin-bottom: 95px;
 	padding-left: 100px;
 	padding-right: 160px;
+	letter-spacing: 10px;
 }
 
 .header__title-yellow{
 	color: #ffc21a;
-	font-size: 66px;
 	display: block;
+	letter-spacing: 6px;
+}
+
+.header__title-comfortably {
+	font-size: 50px;
+	letter-spacing: 6px;
 }
 
 .header__text {
@@ -104,7 +111,38 @@ section {
 }
 
 .list-process__item{
-	display: inline;
+	display: inline-block;
+	position: relative;
+	padding-top: 200px; 
+}
+
+.list-process__item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 200px;
+	height: 230px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.list-process__item:nth-child(1)::before {
+	background-image: url('../images/list-1.png');
+}
+
+.list-process__item:nth-child(2)::before {
+	background-image: url('../images/list-2.png');
+}
+
+.list-process__item:nth-child(3)::before {
+	background-image: url('../images/list-3.png');
+}
+
+.list-process__item:nth-child(4)::before {
+	background-image: url('../images/list-4.png');
 }
 
 .list-process__title {
@@ -115,6 +153,23 @@ section {
 /* Formatando a section about us */
 .about-us {
 	margin-bottom: 150px;
+}
+
+.section__title-color {
+	color: #a9eadd;
+}
+
+.section__title-color::after {
+	content: '';
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 20px;
+	left: 16%;
+	transform: translateX(-50%);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../images/bar.png);
 }
 
 /* Formatando a section our goals */
