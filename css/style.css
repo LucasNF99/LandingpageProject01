@@ -10,7 +10,6 @@
 html {
 	scroll-behavior: smooth;
 }
-
 body {
 	background-color: #4d4bac;
 	font-family: 'Franklin Gothic Book';
@@ -196,6 +195,23 @@ body {
 	height: 20px;
 	left: 8%;
 	top: 30px;
+	transform: translateX(-50%);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../images/bar.png);
+}
+
+.section__title-color {
+	color: #a9eadd;
+}
+
+.section__title-color::after {
+	content: '';
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 20px;
+	left: 16%;
 	transform: translateX(-50%);
 	background-size: contain;
 	background-repeat: no-repeat;
