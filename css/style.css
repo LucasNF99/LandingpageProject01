@@ -4,43 +4,57 @@
 
 @font-face {
 	font-family: 'Franklin Gothic Book';
-	src: url(../font/Franklin\ Gothic\ Book.ttf);
+	src: url('../font/Franklin\ Gothic\ Book.ttf');
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	background-color: #4d4bac;
 	font-family: 'Franklin Gothic Book';
 	color: #ecf1f4;
+	    scroll-behavior: smooth;
 }
-section {
-	margin-left: 360px;
-	margin-right: 360px;
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 /*Formatando o header*/
 .header {
-	margin-top: 106px;
 	padding-left: 50%;
 	position: relative;
-	margin-bottom: 350px;
+	margin-right: 70px;
+	margin-bottom: 300px;
 }
 .header::before {
 	content: '';
 	display: block;
-	width: 670px;
-	height: 600px;
+	width: 750px;
+	height: 800px;
 	position: absolute;
-	background-image: url(../images/ilustration-man.png);
+	background-image: url(../images/ilustration-1.png);
 	background-position: center center;
 	background-size: cover;
-	left: -100px;
+	left: -50px;
 }
 
 .menu {
-	margin-bottom: 150px;
+	position: fixed;
+    left: 0;
+    right: 0;
+	top: 0;
+    z-index: 10;
+	height: 100px;
 }
 
 .menu__list {
 	list-style: none;
+	position: absolute;
+    right: 20%;
+	top: 50%;
+	
 }
 
 .menu__list-item {
@@ -54,6 +68,7 @@ section {
 	color: #ecf1f4;
 }
 
+.is-active,
 .menu__item:hover {
 	color: #ffc21a;
 }
@@ -64,16 +79,23 @@ section {
 
 
 .header__title {
-	font-size: 60px;
+	font-size: 55px;
 	margin-bottom: 95px;
 	padding-left: 100px;
 	padding-right: 160px;
+	letter-spacing: 10px;
+	margin-top: 200px;
 }
 
 .header__title-yellow{
 	color: #ffc21a;
-	font-size: 66px;
 	display: block;
+	letter-spacing: 6px;
+}
+
+.header__title-comfortably {
+	font-size: 50px;
+	letter-spacing: 6px;
 }
 
 .header__text {
@@ -91,7 +113,7 @@ section {
 
 /* Formatando a section how started */
 .how-started {
-	margin-bottom: 150px;
+	padding-top: 200px;
 }
 
 .section__title {
@@ -101,10 +123,53 @@ section {
 
 .list-process {
 	list-style: none;
+	text-align: center;
 }
 
-.list-process__item{
-	display: inline;
+.list-process__item {
+	display: inline-block;
+	position: relative;
+	max-width: 120px;
+	padding-top: 250px;
+	padding-right: 120px;
+	vertical-align: top;
+}
+
+.list-process__title {
+	letter-spacing: 2px;
+	padding-bottom: 8px;
+	line-height: 25px;
+}
+
+
+.list-process__item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 222px;
+	height: 230px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.list-process__item:nth-child(1)::before {
+	background-image: url('../images/list-1.png');
+}
+
+.list-process__item:nth-child(2)::before {
+	background-image: url('../images/list-2.png');
+}
+
+.list-process__item:nth-child(3)::before {
+	background-image: url('../images/list-3.png');
+}
+
+.list-process__item:nth-child(4)::before {
+	background-image: url('../images/list-4.png');
+	width: 285px;
 }
 
 .list-process__title {
@@ -114,17 +179,37 @@ section {
 
 /* Formatando a section about us */
 .about-us {
-	margin-bottom: 150px;
+	padding-top: 150px;
+}
+
+.section__title-color {
+	color: #a9eadd;
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.section__title-color::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 20px;
+	left: 8%;
+	top: 30px;
+	transform: translateX(-50%);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../images/bar.png);
 }
 
 /* Formatando a section our goals */
 .our-goals {
-	margin-bottom: 150px;
+	padding-top: 150px;
 }
 
 /* Formatando a section get in touch*/
 .get-in-touch {
-	margin-bottom: 150px;
+	padding-top: 150px;
 }
 
 .oneForm input {
