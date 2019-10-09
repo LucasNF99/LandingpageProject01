@@ -115,9 +115,23 @@ body {
 	padding-top: 200px;
 }
 
+.b-bar::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 20px;
+	left: 41.5%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(../images/bar.png);
+	top: -40px;
+}
+
 .section__title {
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 46px;
+	position: relative;
 }
 
 .list-process {
@@ -138,6 +152,7 @@ body {
 	letter-spacing: 2px;
 	padding-bottom: 8px;
 	line-height: 25px;
+	font-size: 14,26px;
 }
 
 
@@ -179,43 +194,49 @@ body {
 /* Formatando a section about us */
 .about-us {
 	padding-top: 150px;
-}
-
-.section__title-color {
-	color: #a9eadd;
 	position: relative;
-	margin-bottom: 25px;
+	padding-left: 164px;
 }
 
+.about-us::before {
+	content: '';
+	display: block;
+	width: 530px;
+	height: 600px;
+	position: absolute;
+	background-image: url(../images/ilustration-2.png);
+	background-position: center center;
+	background-size: cover;
+	right: 0;
+	top: 90px;
+}
 .section__title-color::after {
 	content: '';
 	display: block;
 	position: absolute;
 	width: 200px;
 	height: 20px;
-	left: 8%;
-	top: 30px;
-	transform: translateX(-50%);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url(../images/bar.png);
+	margin-top: 5px;
 }
 
-.section__title-color {
+.section__sub-title {
+	margin-bottom: 50px;
+	padding-right: 750px;
+	margin-top: 40px;
+}
+
+.section__text {
+	padding-right: 500px;
+	padding-left: 0px;
+	margin-bottom: 50px
+}
+
+.section__sub-title_color {
 	color: #a9eadd;
-}
-
-.section__title-color::after {
-	content: '';
-	display: block;
-	position: relative;
-	width: 200px;
-	height: 20px;
-	left: 16%;
-	transform: translateX(-50%);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-image: url(../images/bar.png);
+	letter-spacing: 2px;
 }
 
 /* Formatando a section our goals */
