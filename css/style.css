@@ -14,7 +14,7 @@ body {
 	background-color: #4d4bac;
 	font-family: 'Franklin Gothic Book';
 	color: #ecf1f4;
-	    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 .container {
 	max-width: 1200px;
@@ -26,17 +26,18 @@ body {
 	position: relative;
 	margin-right: 70px;
 	margin-bottom: 300px;
+	padding-top: 100px;
 }
 .header::before {
 	content: '';
 	display: block;
-	width: 750px;
+	width: 861px;
 	height: 800px;
 	position: absolute;
 	background-image: url(../images/ilustration-1.png);
 	background-position: center center;
 	background-size: cover;
-	left: -50px;
+	left: -150px;
 }
 
 .menu {
@@ -44,7 +45,7 @@ body {
     left: 0;
     right: 0;
 	top: 0;
-    z-index: 10;
+	z-index: 10;
 	height: 100px;
 }
 
@@ -53,7 +54,6 @@ body {
 	position: absolute;
     right: 20%;
 	top: 50%;
-	
 }
 
 .menu__list-item {
@@ -83,7 +83,7 @@ body {
 	padding-left: 100px;
 	padding-right: 160px;
 	letter-spacing: 10px;
-	margin-top: 200px;
+	padding-top: 100px;
 }
 
 .header__title-yellow{
@@ -110,6 +110,10 @@ body {
 	cursor: pointer;
 }
 
+.btn-default:hover {
+	color: #1b1a61;
+}
+
 /* Formatando a section how started */
 .how-started {
 	padding-top: 200px;
@@ -121,7 +125,8 @@ body {
 	position: absolute;
 	width: 200px;
 	height: 20px;
-	left: 41.5%;
+	left: 50%;
+	transform: translateX(-50%) ;
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-image: url(../images/bar.png);
@@ -193,23 +198,25 @@ body {
 
 /* Formatando a section about us */
 .about-us {
-	padding-top: 150px;
+	padding-top: 200px;
 	position: relative;
 	padding-left: 164px;
+	padding-bottom: 100px;
 }
 
-.about-us::before {
+/*.about-us::before {
 	content: '';
 	display: block;
-	width: 530px;
-	height: 600px;
+	width: 750px;
+	height: 800px;
 	position: absolute;
 	background-image: url(../images/ilustration-2.png);
 	background-position: center center;
-	background-size: cover;
-	right: 0;
-	top: 90px;
-}
+	background-size: contain;
+	left: -50px;
+	background: no-repeat;
+}*/
+
 .section__title-color::after {
 	content: '';
 	display: block;
@@ -241,14 +248,110 @@ body {
 
 /* Formatando a section our goals */
 .our-goals {
-	padding-top: 150px;
+	padding-top: 100px;
+	position: relative;
+	margin-bottom: 250px;
+}
+
+.our-goals::before {
+	content: '';
+	display: block;
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	background-image: url(../images/ilustration-3.png);
+	background-position: center center;
+	background-size: cover;
+	left: -150px;
+	top: 0px;
+}
+
+.our-goals-pd {
+	padding-left: 500px;
+	padding-right: 100px;
+}
+
+.our-goals-pd-r {
+	padding-left: 500px;
+	padding-right: 400px;
+}
+
+.btn-our-gols {
+	margin-left: 500px;
+	margin-right: 100px;
 }
 
 /* Formatando a section get in touch*/
 .get-in-touch {
 	padding-top: 150px;
+	position: relative;
+	margin-bottom: 200px;
+}
+
+.get-in-touch-pd-r {
+	padding-left: 500px;
+	padding-right: 300px;
+}
+
+.get-in-touch::before {
+	content: '';
+	display: block;
+	width: 580px;
+	height: 500px;
+	position: absolute;
+	background-image: url(../images/ilustration-4.png);
+	background-position: center center;
+	background-size: cover;
+	left: -100px;
+	top: 90px;
 }
 
 .oneForm input {
+	display: inline-block;
+	background-color: #4d4bac;
+	border: 1.5px solid #a9eadd;
+	border-radius: 5px;
+	margin-top: 30px;
+}
+.oneForm {
+	padding-left: 500px;
+	padding-right: 100px;
+}
+::-webkit-input-placeholder {
+	color: #ecf1f4;
+	margin-right: 5px;
+}
+.get-in-touch-pd {
+	padding-left: 500px;
+	padding-right: 100px;
+}
+
+.oneForm__link {
 	display: block;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	color: #ecf1f4;
+}
+.oneForm__input-email {
+	width: 540px;
+	height: 50px;
+}
+.oneForm__input-name {
+	width: 240px;
+	margin-right: 52px;
+	height: 50px;
+}
+.oneForm__input-webLink {
+	width: 240px;
+	height: 50px;
+}
+
+.oneForm__bnt {
+	width: 200px;
+	height: 52px;
+}
+
+.oneForm__input-message {
+	width: 540px;
+	height: 170px;
 }
