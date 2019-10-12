@@ -6,7 +6,6 @@
 	font-family: 'Franklin Gothic Book';
 	src: url('../font/Franklin\ Gothic\ Book.ttf');
 }
-
 html {
 	scroll-behavior: smooth;
 }
@@ -15,6 +14,7 @@ body {
 	font-family: 'Franklin Gothic Book';
 	color: #ecf1f4;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 .container {
 	max-width: 1200px;
@@ -25,7 +25,7 @@ body {
 	padding-left: 50%;
 	position: relative;
 	margin-right: 70px;
-	margin-bottom: 300px;
+	margin-bottom: 128px;
 	padding-top: 100px;
 }
 .header::before {
@@ -74,6 +74,7 @@ body {
 
 .header__link{
 	text-decoration: none;
+	margin-left: 100px;
 }
 
 
@@ -99,6 +100,7 @@ body {
 
 .header__text {
 	margin-bottom: 80px;
+	padding-left: 100px;
 }
 
 .btn-default {
@@ -201,21 +203,21 @@ body {
 	padding-top: 200px;
 	position: relative;
 	padding-left: 164px;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 }
 
-/*.about-us::before {
+.about-us::before {
 	content: '';
 	display: block;
-	width: 750px;
-	height: 800px;
+	width: 705px;
+	height: 550px;
 	position: absolute;
 	background-image: url(../images/ilustration-2.png);
 	background-position: center center;
-	background-size: contain;
-	left: -50px;
-	background: no-repeat;
-}*/
+	background-size: cover;
+	right: -90px;
+	top: 100px;
+}
 
 .section__title-color::after {
 	content: '';
@@ -236,7 +238,7 @@ body {
 }
 
 .section__text {
-	padding-right: 500px;
+	padding-right: 700px;
 	padding-left: 0px;
 	margin-bottom: 50px
 }
@@ -250,13 +252,13 @@ body {
 .our-goals {
 	padding-top: 100px;
 	position: relative;
-	margin-bottom: 250px;
+	margin-bottom: 125px;
 }
 
 .our-goals::before {
 	content: '';
 	display: block;
-	width: 500px;
+	width: 585px;
 	height: 500px;
 	position: absolute;
 	background-image: url(../images/ilustration-3.png);
@@ -264,6 +266,7 @@ body {
 	background-size: cover;
 	left: -150px;
 	top: 0px;
+	overflow: hidden;
 }
 
 .our-goals-pd {
@@ -306,12 +309,16 @@ body {
 	top: 90px;
 }
 
-.oneForm input {
+.oneForm__input {
 	display: inline-block;
 	background-color: #4d4bac;
 	border: 1.5px solid #a9eadd;
 	border-radius: 5px;
 	margin-top: 30px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	width: 540px;
+	height: 50px;
 }
 .oneForm {
 	padding-left: 500px;
@@ -332,18 +339,22 @@ body {
 	margin-bottom: 45px;
 	color: #ecf1f4;
 }
-.oneForm__input-email {
-	width: 540px;
-	height: 50px;
-}
-.oneForm__input-name {
+.name_form {
 	width: 240px;
 	margin-right: 52px;
 	height: 50px;
 }
-.oneForm__input-webLink {
+.webLink_form {
 	width: 240px;
 	height: 50px;
+}
+
+.message_form {
+	resize: none;
+	font-family: 'Franklin Gothic Book';
+	height: 170px;
+	padding-top: 25px;
+	box-sizing: border-box;
 }
 
 .oneForm__bnt {
