@@ -47,12 +47,14 @@ body {
 	top: 0;
 	z-index: 10;
 	height: 100px;
+	transition: 1s
 }
 
 .menu-color {
 	position: fixed;
 	background-color: #4947a1;
-    height: 50px;
+	height: 50px;
+	transition: 1s
 }
 
 .menu__list {
