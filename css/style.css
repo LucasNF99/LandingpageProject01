@@ -25,7 +25,7 @@ body {
 	padding-left: 50%;
 	position: relative;
 	margin-right: 70px;
-	margin-bottom: 128px;
+	margin-bottom: 190px;
 	padding-top: 100px;
 }
 .header::before {
@@ -47,6 +47,12 @@ body {
 	top: 0;
 	z-index: 10;
 	height: 100px;
+}
+
+.menu-color {
+	position: fixed;
+	background-color: #4947a1;
+    height: 50px;
 }
 
 .menu__list {
@@ -113,12 +119,12 @@ body {
 }
 
 .btn-default:hover {
-	color: #1b1a61;
+	box-shadow: 5px 10px 2px 0px rgb(97, 31, 160);
 }
 
 /* Formatando a section how started */
 .how-started {
-	padding-top: 200px;
+	padding-top: 125px;
 }
 
 .b-bar::before {
@@ -267,6 +273,7 @@ body {
 	left: -150px;
 	top: 0px;
 	overflow: hidden;
+	margin-top: 65px;
 }
 
 .our-goals-pd {
