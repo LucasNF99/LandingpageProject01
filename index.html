@@ -1,126 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Work’s with confortably</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@4/dist/gumshoe.polyfills.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work’s with confortably</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-
-<body>
-  <header class="header rmv_before" id="home">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__list-item">
-          <a href="#home" class="menu__item is-active">Home</a>
+  <body>
+    <header class="header" id="home">
+      <nav class="menu">
+        <ul class="menu__list" id="menu-list">
+          <li class="menu__list-item">
+            <a href="#home" class="menu__item is-active">Home</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#how-started" class="menu__item">Works</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#about-us" class="menu__item">About us </a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#our-goals" class="menu__item">Passangers</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#get-in-touch" class="menu__item">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__title">
+        Start Your <span class="header__title-yellow">Work’s with</span>
+        <span class="header__title-comfortably"> Comfortably </span>
+      </h1>
+      <p class="header__text">
+        Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors.
+      </p>
+      <a href="#" class="header__link btn-default">Discover</a>
+    </header>
+    <section class="how-started container" id="how-started">
+      <h2 class="section__title b-bar">How that’s get started?</h2>
+      <ul class="list-process">
+        <li class="list-process__item">
+          <h3 class="list-process__title">Create your account</h3>
+          <p class="list-process__text">
+            Eu elit nisi aliquip reprehenderit est ex esse sint amet velit amet
+            tempor cupidatat occaecat.
+          </p>
         </li>
-        <li class="menu__list-item">
-          <a href="#how-started" class="menu__item">Works</a>
+        <li class="list-process__item">
+          <h3 class="list-process__title">Plan your journeys</h3>
+          <p class="list-process__text">
+            Duis labore ea officia anim voluptate quis commodo incididunt ea
+            occaecat.
+          </p>
         </li>
-        <li class="menu__list-item">
-          <a href="#about-us" class="menu__item">About us </a>
+        <li class="list-process__item">
+          <h3 class="list-process__title">Meet your drivers</h3>
+          <p class="list-process__text">
+            Exercitation quis ea ex cupidatat aliqua ex cupidatat magna.
+          </p>
         </li>
-        <li class="menu__list-item">
-          <a href="#our-goals" class="menu__item">Passangers</a>
-        </li>
-        <li class="menu__list-item">
-          <a href="#get-in-touch" class="menu__item">Contact</a>
+        <li class="list-process__item">
+          <h3 class="list-process__title">Enjoy your journey</h3>
+          <p class="list-process__text">
+            Minim consectetur culpa veniam anim consectetur consequat.
+          </p>
         </li>
       </ul>
-    </nav>
-    <h1 class="header__title">
-      Start Your <span class="header__title-yellow">Work’s with</span>
-      <span class="header__title-comfortably"> Comfortably </span>
-    </h1>
-    <p class="header__text">
-      Lorem Ipsum is that it has a more-or-less normal distribution of
-      letters, as opposed to using 'Content here, content here', making it
-      look like readable English. Many desktop publishing packages and web
-      page editors.
-    </p>
-    <a href="#" class="header__link btn-default">Discover</a>
-  </header>
-  <section class="how-started container rmv_before" id="how-started">
-    <h2 class="section__title b-bar">How that’s get started?</h2>
-    <ul class="list-process">
-      <li class="list-process__item">
-        <h3 class="list-process__title">Create your account</h3>
-        <p class="list-process__text">
-          Eu elit nisi aliquip reprehenderit est ex esse sint amet velit amet
-          tempor cupidatat occaecat.
-        </p>
-      </li>
-      <li class="list-process__item">
-        <h3 class="list-process__title">Plan your journeys</h3>
-        <p class="list-process__text">
-          Duis labore ea officia anim voluptate quis commodo incididunt ea
-          occaecat.
-        </p>
-      </li>
-      <li class="list-process__item">
-        <h3 class="list-process__title">Meet your drivers</h3>
-        <p class="list-process__text">
-          Exercitation quis ea ex cupidatat aliqua ex cupidatat magna.
-        </p>
-      </li>
-      <li class="list-process__item">
-        <h3 class="list-process__title">Enjoy your journey</h3>
-        <p class="list-process__text">
-          Minim consectetur culpa veniam anim consectetur consequat.
-        </p>
-      </li>
-    </ul>
-  </section>
-  <section class="about-us container rmv_before" id="about-us">
-    <h2 class="section__title-color about-us-title">About Us</h2>
-    <h2 class="section__sub-title about-us-sub-title">
-      Our Vision is to Build Successful
-      <span class="section__sub-title_color"> BUSINESS SOLUTION</span>
-    </h2>
-    <p class="section__text about-us-tx">
-      Quis ut ad id irure sit veniam dolore reprehenderit incididunt anim
-      velit commodo eiusmod eiusmod enim elit magna ex non commodo deserunt
-      sit pariatur voluptate.
-    </p>
-    <button class=" btn-default">Know More</button>
-  </section>
-  <section class="our-goals container rmv_before" id="our-goals">
-    <h1 class="section__title-color our-goals-pd">Our Goals</h1>
-    <h2 class="section__sub-title our-goals-pd-r">
-      Experts about your
-      <span class="section__sub-title_color">PROJECT FOR FREE</span>
-    </h2>
-    <p class="section__text our-goals-pd">
-      Lorem Ipsum is that it has a more-or-less normal distribution of
-      letters, as opposed to using'Content here, content here', making it look
-      like readable English. Many desktop publishing packages and web page
-      editors.
-    </p>
-    <button class="btn-our-gols btn-default">Know More</button>
-  </section>
-  <section class="get-in-touch container rmv_before" id="get-in-touch">
-    <h1 class="section__title-color get-in-touch-pd">Get In Touch</h1>
-    <h2 class="section__sub-title get-in-touch-pd-r">
-      Consults our experts about your
-      <span class="section__sub-title_color">PROJECT FOR FREE</span>
-    </h2>
-    <p class="section__text get-in-touch-pd">
-      Lorem Ipsum is that it has a more-or-less normal distribution of
-      letters, as opposed to using 'Content here, content here', making it
-      look like readable English. Many desktop publishing packages and web
-      page editors.
-    </p>
-    <form class="oneForm rmv_before">
-      <input type="text" name="name" id="name" placeholder="Name" class="oneForm__input name_form" />
-      <input type="text" name="webLink" id="webLink" placeholder="Website Link" class="oneForm__input webLink_form" />
-      <input type="email" name="email" id="email" placeholder="Email" class="oneForm__input email_form" />
-      <textarea name="message" id="message" placeholder="Message" class="oneForm__input message_form"></textarea>
-      <a href="#" class="oneForm__link">You agree with Terms of Service & Privacy Policy</a>
-      <button class="oneForm__bnt btn-default">Send Message</button>
-    </form>
-  </section>
-  <script src="./js/index.js"></script>
-</body>
-
+    </section>
+    <section class="about-us container" id="about-us">
+      <h2 class="section__title-color about-us-title">About Us</h2>
+      <h2 class="section__sub-title about-us-sub-title">
+        Our Vision is to Build Successful
+        <span class="section__sub-title_color"> BUSINESS SOLUTION</span>
+      </h2>
+      <p class="section__text about-us-tx">
+        Quis ut ad id irure sit veniam dolore reprehenderit incididunt anim
+        velit commodo eiusmod eiusmod enim elit magna ex non commodo deserunt
+        sit pariatur voluptate.
+      </p>
+      <button class=" btn-default">Know More</button>
+    </section>
+    <section class="our-goals container" id="our-goals">
+      <h1 class="section__title-color our-goals-pd">Our Goals</h1>
+      <h2 class="section__sub-title our-goals-pd-r">
+        Experts about your
+        <span class="section__sub-title_color">PROJECT FOR FREE</span>
+      </h2>
+      <p class="section__text our-goals-pd">
+        Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using'Content here, content here', making it look
+        like readable English. Many desktop publishing packages and web page
+        editors.
+      </p>
+      <button class="btn-our-gols btn-default">Know More</button>
+    </section>
+    <section class="get-in-touch container" id="get-in-touch">
+      <h1 class="section__title-color get-in-touch-pd">Get In Touch</h1>
+      <h2 class="section__sub-title get-in-touch-pd-r">
+        Consults our experts about your
+        <span class="section__sub-title_color">PROJECT FOR FREE</span>
+      </h2>
+      <p class="section__text get-in-touch-pd">
+        Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors.
+      </p>
+      <form class="oneForm">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          class="oneForm__input name_form"
+        />
+        <input
+          type="text"
+          name="webLink"
+          id="webLink"
+          placeholder="Website Link"
+          class="oneForm__input webLink_form"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="oneForm__input email_form"
+        />
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Message"
+          class="oneForm__input message_form"
+        ></textarea>
+        <a href="#" class="oneForm__link"
+          >You agree with Terms of Service & Privacy Policy</a
+        >
+        <button class="oneForm__bnt btn-default">Send Message</button>
+      </form>
+    </section>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

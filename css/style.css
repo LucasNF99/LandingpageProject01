@@ -12,7 +12,8 @@ html {
 }
 body {
   background-color: #4d4bac;
-  font-family: "Franklin Gothic Book";
+  font-family: "Franklin Gothic Book", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #ecf1f4;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -76,7 +77,7 @@ body {
   color: #ecf1f4;
 }
 
-.is-active,
+.menu__list-item.active a,
 .menu__item:hover {
   color: #ffc21a;
 }
