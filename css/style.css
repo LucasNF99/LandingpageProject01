@@ -51,7 +51,6 @@ body {
   height: 100px;
   transition: 1s;
 }
-
 .menu-color {
   position: fixed;
   background-color: #4947a1;
@@ -76,7 +75,6 @@ body {
   text-decoration: none;
   color: #ecf1f4;
 }
-
 .menu__list-item.active a,
 .menu__item:hover {
   color: #ffc21a;
@@ -382,20 +380,26 @@ body {
 }
 /*Responsive*/
 @media only screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
   .rmv_before::before {
     content: none;
   }
   .header {
     padding-left: 0px;
-    margin: 0 auto 0 250px;
+    margin-bottom: 0;
   }
   .header__title {
     font-size: 35px;
-    padding-left: 0;
+    padding-left: 10%;
+    margin-bottom: 40px;
   }
   .header__text {
-    padding-left: 0;
-    width: 500px;
+    padding-left: 10%;
+    max-width: 500px;
+    max-width: 250px;
+    margin-bottom: 40px;
   }
   .header__title-yellow {
     display: inline;
@@ -409,30 +413,105 @@ body {
 
   .btn-default {
     padding: 10px 20px;
+    max-width: 70%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  /* Formatando a section how started */
+  .list-process__item::before {
+    margin-top: 25px;
+    width: 130px;
+  }
+  .list-process__item:nth-child(4)::before {
+    width: 200px;
+  }
+  .list-process__item {
+    padding-right: 25px;
+  }
+  /* Formatando a section our goals */
+  .our-goals {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 100px;
+  }
+  .our-goals-pd {
+    padding-left: 10%;
+  }
+  .our-goals-pd-r {
+    padding-left: 10%;
   }
 
-  /* Formatando a section how started */
-
+  .btn-our-gols {
+    max-width: 375px;
+    padding-left: 25px;
+    margin-left: 10%;
+    margin-right: 0;
+  }
   /* Formatatando a section about us*/
   .about-us {
     padding-left: 0;
-    margin: 0 auto 0 250px;
+    padding-top: 100px;
+    padding-bottom: 0;
   }
   .section__text {
-    width: 500px;
+    max-width: 250px;
+    padding-left: 10%;
   }
   .section__title-color {
-    width: 200px;
-  }
-  .section__sub-title {
-    width: 500px;
+    max-width: 200px;
+    font-size: 25px;
+    padding-left: 10%;
   }
 
+  .section__title-color::after {
+    width: 65px;
+    padding-left: 10%;
+  }
+  .section__sub-title {
+    max-width: 270px;
+    font-size: 20px;
+    padding-left: 10%;
+  }
+  .section__title {
+    font-size: 20px;
+  }
+  .section__title::before {
+    max-width: 150px;
+    top: -20px;
+  }
   /* Formatando a section get in touch*/
+  .get-in-touch-pd {
+    padding-left: 10%;
+    padding-right: 0;
+  }
+  .get-in-touch-pd-r {
+    padding-left: 10%;
+  }
+
   .oneForm {
-    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
   .oneForm__input {
-    width: 100%;
+    max-width: 95%;
+    display: block;
+    margin-right: 0;
+  }
+  .webLink_form {
+    max-width: 95%;
+    width: 374px;
+  }
+  .name_form {
+    max-width: 95%;
+    width: 374px;
+  }
+  .oneForm__bnt {
+    height: 40px;
+    margin-left: 20%;
+  }
+  .oneForm__link {
+    padding-left: 10%;
+    font-size: 14px;
   }
 }
