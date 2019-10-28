@@ -494,17 +494,17 @@ body {
     padding-right: 0;
   }
   .oneForm__input {
-    max-width: 95%;
+    max-width: 100%;
     display: block;
     margin-right: 0;
   }
   .webLink_form {
-    max-width: 95%;
-    width: 374px;
+    max-width: 100%;
+    width: 100%;
   }
   .name_form {
-    max-width: 95%;
-    width: 374px;
+    max-width: 100%;
+    width: 100%;
   }
   .oneForm__bnt {
     height: 40px;
