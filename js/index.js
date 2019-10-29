@@ -9,3 +9,6 @@ function scroll() {
 		navMenu.classList.remove('menu-color');
 	}
 };
+
+const btn = document.querySelector('#btn-hamburguer');
+btn.addEventListener('click', () => navMenu.classList.toggle('open'));
