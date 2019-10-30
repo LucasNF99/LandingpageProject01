@@ -447,13 +447,15 @@ body {
     content: none;
   }
   .header {
-    padding-left: 0px;
-    margin-bottom: 0;
+    padding-left: 0;
+    margin-bottom: 60px;
+    padding-top: 0;
   }
   .header__title {
     font-size: 35px;
     padding-left: 10%;
     margin-bottom: 40px;
+    padding-top: 60px;
   }
   .header__text {
     padding-left: 10%;
@@ -503,6 +505,10 @@ body {
     margin-left: 10%;
   }
   /* Formatando a section how started */
+  .how-started {
+    padding-top: 60px;
+    margin-bottom: 1px
+  }
   .list-process__item::before {
     margin-top: 25px;
     width: 130px;
@@ -517,8 +523,8 @@ body {
   .our-goals {
     padding-left: 0;
     margin-left: 0;
-    margin-bottom: 0;
-    padding-top: 100px;
+    margin-bottom: 5px;
+    padding-top: 60px;
   }
   .our-goals-pd {
     padding-left: 10%;
@@ -536,8 +542,9 @@ body {
   /* Formatatando a section about us*/
   .about-us {
     padding-left: 0;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 0;
+    margin-bottom: 5px;
   }
   .section__text {
     max-width: 250px;
@@ -566,6 +573,10 @@ body {
     top: -20px;
   }
   /* Formatando a section get in touch*/
+  .get-in-touch {
+    padding-top: 60px;
+    margin-bottom: 100px;
+  }
   .get-in-touch-pd {
     padding-left: 10%;
     padding-right: 0;
