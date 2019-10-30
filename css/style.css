@@ -311,7 +311,7 @@ body {
 }
 
 .section__text {
-  max-width: 500px;
+  max-width: 460px;
   margin-bottom: 50px;
 }
 
@@ -438,7 +438,7 @@ body {
   width: 540px;
   height: 170px;
 }
-/*Responsive*/
+/*Responsive 375 to 767*/
 @media only screen and (max-width: 767px) {
   body {
     overflow-x: hidden;
@@ -474,7 +474,7 @@ body {
   }
 
   .menu {
-    left: 50%;
+    left: 55%;
     height: 100%;
     background: #4947a1;
     z-index: 1;
@@ -492,6 +492,7 @@ body {
   .menu__list-item {
     display: block;
     padding-top: 15px;
+    font-size: 20px;
   }
   .btn-menu {
     display: block;
@@ -590,17 +591,20 @@ body {
     padding-right: 0;
   }
   .oneForm__input {
-    max-width: 100%;
+    max-width: 90%;
     display: block;
     margin-right: 0;
+    margin-left: 5%;
   }
   .webLink_form {
-    max-width: 100%;
-    width: 100%;
+    max-width: 90%;
+    width: 90%;
+    margin-left: 5%;
   }
   .name_form {
-    max-width: 100%;
-    width: 100%;
+    max-width: 90%;
+    width: 90%;
+    margin-left: 5%;
   }
   .oneForm__bnt {
     height: 40px;
@@ -609,5 +613,55 @@ body {
   .oneForm__link {
     padding-left: 10%;
     font-size: 14px;
+  }
+}
+
+/*Responsive 768 to 1200*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .header::before {
+    width: 540px;
+    height: 500px;
+  }
+
+  .header {
+    margin-right: 5px;
+  }
+
+  .header__title {
+    padding-left: 0;
+    font-size: 40px;
+  }
+
+  .header__title-comfortably {
+    font-size: 40px;
+  }
+
+  .header p {
+    padding-left: 0;
+  }
+
+  .header__text { 
+    .padding-left: 0;
+  }
+
+  .btn-default {
+    margin-left: 0;
+  }
+
+/*How started*/
+  .list-process__item{
+    padding-right: 65px;
+  }
+
+  .list-process__item:nth-child(1)::before {
+    left: 60%;
+  }
+
+  .list-process__item:nth-child(4)::before {
+    width: 195px;
+  }
+
+  .last-item {
+    padding-right: 0;
   }
 }
