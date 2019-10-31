@@ -456,6 +456,7 @@ body {
     padding-left: 10%;
     margin-bottom: 40px;
     padding-top: 60px;
+    max-width: 340px;
   }
   .header__text {
     padding-left: 10%;
@@ -520,34 +521,8 @@ body {
   .list-process__item {
     padding-right: 25px;
   }
-  /* Formatando a section our goals */
-  .our-goals {
-    padding-left: 0;
-    margin-left: 0;
-    margin-bottom: 5px;
-    padding-top: 60px;
-  }
-  .our-goals-pd {
-    padding-left: 10%;
-  }
-  .our-goals-pd-r {
-    padding-left: 10%;
-  }
 
-  .btn-our-gols {
-    max-width: 375px;
-    padding-left: 25px;
-    margin-left: 10%;
-    margin-right: 0;
-  }
-  /* Formatatando a section about us*/
-  .about-us {
-    padding-left: 0;
-    padding-top: 60px;
-    padding-bottom: 0;
-    margin-bottom: 5px;
-  }
-  .section__text {
+    .section__text {
     max-width: 250px;
     padding-left: 10%;
   }
@@ -573,6 +548,35 @@ body {
     max-width: 150px;
     top: -20px;
   }
+  /* Formatting the section our goals*/
+  .our-goals {
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+    padding-top: 60px;
+  }
+  .our-goals-pd {
+    padding-left: 10%;
+  }
+  .our-goals-pd-r {
+    padding-left: 10%;
+    max-width: 250px;
+  }
+
+  .btn-our-gols {
+    max-width: 375px;
+    padding-left: 25px;
+    margin-left: 10%;
+    margin-right: 0;
+  }
+  /* Formatatando a section about us*/
+  .about-us {
+    padding-left: 0;
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+  }
+
   /* Formatando a section get in touch*/
   .get-in-touch {
     padding-top: 60px;
@@ -663,5 +667,68 @@ body {
 
   .last-item {
     padding-right: 0;
+  }
+
+  /* Formatatando a section about us*/
+  .about-us {
+    padding-left: 50px;
+  }
+
+  .about-us::before {
+    right: -260px;
+    width: 570px;
+    height: 450px;
+  }
+
+  .about-us-tx {
+    max-width: 400px;
+  }
+
+  /*Formatting the section our goals*/
+
+  .btn-our-gols {
+    margin-left: 400px;
+  }
+  
+  .our-goals-pd-r {
+    width: 370px;
+    padding-left: 400px;
+  }
+
+  .our-goals-pd {
+    width: 320px;
+    padding-left: 400px;
+  }
+
+  /*Formatting the section get in touch*/
+  .get-in-touch::before {
+    left: -240px;
+  }
+
+  .get-in-touch-pd-r {
+    width: 410px;
+    padding-left: 400px;
+  }
+
+  .get-in-touch-pd{
+    padding-right: 0;
+    width: 350px;
+    padding-left: 400px;
+  }
+
+  .oneForm {
+    padding-left: 400px;
+  }
+
+  .oneForm__input {
+    width: 340px;
+  }
+
+  .name_form {
+    width: 340px;
+  }
+
+  .webLink_form {
+    width: 340px;
   }
 }
